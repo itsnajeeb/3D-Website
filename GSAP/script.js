@@ -1,13 +1,26 @@
 gsap.to('#box', {
-    x:1000,
     duration:3,
-    delay:4,
+    delay:3,
     backgroundColor:'blue',
-    scale:0.5
+    scale:0.5,
+    borderRadius:"50%",
+    yoyo:true,
+
+    repeat:-1,
 })
 
-gsap.from('#box1', {
-    x:1200,
-    duration:3,
-    delay:1
+
+gsap.from('.heading', {
+    opacity:0,
+    duration:1,
+    y:100,
+    delay:1,
+})
+gsap.from('h1', {
+    opacity:0,
+    duration:0.3,
+    x:100,
+    delay:2,
+    stagger:0.5,
+    yoyo:true,
 })
